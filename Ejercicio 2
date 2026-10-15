@@ -1,0 +1,21 @@
+// LINARES FERNANDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACION
+// EJERCICO 2
+#include <stdio.h>
+
+int main()
+{
+    int c, t, p;
+
+    printf("ingresar el total de la cuenta: ");
+    scanf("%i", &t);
+    
+    printf("ingresa el valor total del pago de la cuenta: ");
+    scanf("%i", &p);
+
+    c = t - p; 
+
+    printf("El cambio de regreso es de $%i\n", c);
+
+    return 0;
+}
