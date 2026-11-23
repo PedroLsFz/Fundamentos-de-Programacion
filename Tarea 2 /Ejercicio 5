@@ -1,0 +1,21 @@
+// LINARES FERNÁNDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACIÓN
+// TAREA 2 - EJERCICIO 5
+#include <stdio.h>
+
+int main() {
+    float compra, total;
+
+    printf("Ingresa el monto de la compra: ");
+    scanf("%f", &compra);
+
+    if (compra > 2500.0) {
+        total = compra * 0.92; // 8% de descuento
+    } else {
+        total = compra;
+    }
+
+    printf("Total a pagar: %.2f\n", total);
+
+    return 0;
+}
