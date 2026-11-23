@@ -1,0 +1,25 @@
+// LINARES FERNÁNDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACIÓN
+// TAREA 2 - EJERCICIO 7
+#include <stdio.h>
+
+int main() {
+    float dist_ida, dist_total, precio;
+    int dias;
+
+    printf("Ingresa la distancia de ida (en km): ");
+    scanf("%f", &dist_ida);
+    printf("Ingresa los dias de estancia: ");
+    scanf("%d", &dias);
+
+    dist_total = dist_ida * 2.0;
+    precio = dist_total * 0.23;
+
+    if (dias > 7 && dist_total > 800.0) {
+        precio = precio * 0.70; // 30% de descuento
+    }
+
+    printf("Precio del ticket ida y vuelta: %.2f\n", precio);
+
+    return 0;
+}
