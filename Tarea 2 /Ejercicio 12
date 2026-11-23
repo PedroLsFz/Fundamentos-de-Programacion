@@ -1,0 +1,20 @@
+// LINARES FERNÁNDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACIÓN
+// TAREA 2 - EJERCICIO 12
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    double producto = 1.0;
+
+    printf("Ingresa N: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        producto *= i;
+    }
+
+    printf("El producto de los primeros %d numeros naturales es: %.0f\n", n, producto);
+
+    return 0;
+}
