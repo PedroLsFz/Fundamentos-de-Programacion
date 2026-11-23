@@ -1,0 +1,21 @@
+// LINARES FERNÁNDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACIÓN
+// TAREA 2 - EJERCICIO 6
+#include <stdio.h>
+
+int main() {
+    float sueldo, nuevo_sueldo;
+
+    printf("Ingresa el sueldo del trabajador: ");
+    scanf("%f", &sueldo);
+
+    if (sueldo < 1000.0) {
+        nuevo_sueldo = sueldo * 1.15; // 15% de aumento
+    } else {
+        nuevo_sueldo = sueldo * 1.12; // 12% de aumento
+    }
+
+    printf("Sueldo con aumento: %.2f\n", nuevo_sueldo);
+
+    return 0;
+}
