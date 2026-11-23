@@ -1,0 +1,23 @@
+// LINARES FERNÁNDEZ PEDRO
+// FUNDAMENTOS DE PROGRAMACIÓN
+// TAREA 2 - EJERCICIO 13
+#include <stdio.h>
+
+int main() {
+    int n, i, suma = 0;
+
+    printf("Cuantos elementos tendra el arreglo? ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    for (i = 0; i < n; i++) {
+        printf("Elemento [%d]: ", i);
+        scanf("%d", &arr[i]);
+        suma += arr[i];
+    }
+
+    printf("La suma de los elementos es: %d\n", suma);
+
+    return 0;
+}
